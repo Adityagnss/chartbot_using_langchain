@@ -34,7 +34,7 @@ prompt = ChatPromptTemplate.from_messages(
 
 
 st.title('Langchain Demo With Gemini (language translator)')
-input_text=st.text_input("Write the sentence in english and it will be translated in german")
+input_text=st.text_input("Write the sentence in english and it will be translated in French")
 
 
 
@@ -47,7 +47,7 @@ if input_text:
     st.write(chain.invoke(
     {
         "input_language": "English",
-        "output_language": "German",
+        "output_language": "French",
         "input": input_text, 
         #"input": "I love programming.",
     }
